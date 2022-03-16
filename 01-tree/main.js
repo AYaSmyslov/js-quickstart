@@ -14,24 +14,24 @@ const src = {
             }
         },
         cb: {
-            cba: 'caa string',
+            cba: 'cba string',
             cbb: {
-                cbba: 'caba string',
-                cbbb: 'cabb string'
+                cbba: 'cbba string',
+                cbbb: 'cbbb string'
             }
         }
     },
 };
 
 /*Надо вывести в консоль полные пути до листов дерева (обход дерева без рекурсий, по стеку и по очереди). В нашем случае должны быть выведены следующие строки (не обязательно в таком порядке):
-a
-b
-c/ca/caa
-c/ca/cab/caba
-c/ca/cab/cabb
-c/cb/cba
-c/cb/cbb/cbba
-c/cb/cbb/cbbb
+a: "a string"
+b: "b string"
+c/ca/caa: "caa string"
+c/ca/cab/caba: "caba string"
+c/ca/cab/cabb: "cabb string"
+c/cb/cba: "cba string"
+c/cb/cbb/cbba: "cbba string"
+c/cb/cbb/cbbb: "cbbb string"
 */
 
 /*
