@@ -69,3 +69,17 @@ let queue = [];
 queue.push(5);
 let someItem = queue.shift();
 */
+
+let stack = [[src, ""]];
+while (stack.length > 0){
+    let [obj, path] = stack.pop();
+    if (typeof obj === "string"){
+        console.log(path + ": \"" + obj + '\'');
+    }
+    else{
+        for (const i in obj){
+            let child = path === "" ? i : path + "/" + i;
+            stack.push([obj[i], child]);
+        }
+    }
+}
